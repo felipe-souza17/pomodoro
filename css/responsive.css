@@ -1,0 +1,17 @@
+@media (max-width: 425px) {
+  .inputs {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .timer {
+    margin: 0 auto;
+  }
+  /* Next Button */
+  .nextButton {
+    margin: 10vw 0;
+  }
+  .nextButton button {
+    padding: 15px 30px;
+    font-size: 40px;
+  }
+}
