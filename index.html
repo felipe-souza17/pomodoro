@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+
+    <!-- href -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Links -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Pomodoro</h1>
+    </header>
+    <main>
+      <div class="inputs">
+        <div class="timer">
+          <div class="buttons">
+            <button id="upArrow"><i class="fas fa-arrow-up"></i></button>
+            <br />
+            <button id="downArrow"><i class="fas fa-arrow-down"></i></button>
+          </div>
+          <div class="inputInfo">
+            <input
+              type="text"
+              value="25"
+              maxlength="2"
+              size="1"
+              id="workTime"
+            />
+            <p>Trabalho</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="buttons">
+            <button id="upArrow"><i class="fas fa-arrow-up"></i></button>
+            <br />
+            <button id="downArrow"><i class="fas fa-arrow-down"></i></button>
+          </div>
+          <div class="inputInfo">
+            <input type="text" value="5" maxlength="2" size="1" id="workTime" />
+            <p>Pausa</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="buttons">
+            <button id="upArrow"><i class="fas fa-arrow-up"></i></button>
+            <br />
+            <button id="downArrow"><i class="fas fa-arrow-down"></i></button>
+          </div>
+          <div class="inputInfo">
+            <input type="text" value="3" maxlength="2" size="1" id="workTime" />
+            <p>Sessões</p>
+          </div>
+        </div>
+      </div>
+      <div class="nextButton">
+        <button>Continuar</button>
+      </div>
+    </main>
+  </body>
+</html>
