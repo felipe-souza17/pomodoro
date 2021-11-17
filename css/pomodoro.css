@@ -1,0 +1,129 @@
+:root {
+  --dark-blue: #333853;
+  --light-blue: #3c4262;
+  --green: #219653;
+  --yellow: #f2c94c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+body {
+  background-color: var(--dark-blue);
+}
+a {
+  text-decoration: none;
+  cursor: none;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  font-size: 55px;
+}
+header button {
+  padding: 20px 60px;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  outline: 0;
+  background-color: var(--light-blue);
+  box-shadow: 0px 3px 8px black;
+}
+
+/* Header and Main Config */
+header,
+main {
+  width: 80%;
+  margin: 50px auto;
+}
+
+/* Main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.timer {
+  background-color: var(--light-blue);
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer h2 {
+  font-size: 80px;
+}
+
+.timerInfo {
+  display: flex;
+  flex-direction: column;
+}
+.timerInfo h2 {
+  color: var(--green);
+  font-size: 60px;
+}
+.timerSessions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.session {
+  background-color: var(--green);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 15px 0;
+}
+.timerInfo button {
+  background-color: var(--light-blue); /* Green */
+  border: none;
+  color: white;
+  box-shadow: 0px 3px 8px black;
+  border-radius: 10px;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 35px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  main {
+    gap: 5rem;
+  }
+  .timer {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  main {
+    flex-direction: column;
+  }
+  .timer {
+    width: 250px;
+    height: 250px;
+  }
+  .timer h2 {
+    font-size: 60px;
+  }
+}
