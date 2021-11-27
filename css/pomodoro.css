@@ -64,7 +64,8 @@ main {
   justify-content: center;
   align-items: center;
 }
-.timer h2 {
+.timer h2,
+.timer span {
   font-size: 80px;
 }
 
@@ -82,7 +83,8 @@ main {
   gap: 0.5rem;
 }
 .session {
-  background-color: var(--green);
+  list-style: none;
+  background-color: var(--light-blue);
   width: 15px;
   height: 15px;
   border-radius: 50%;

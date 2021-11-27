@@ -31,18 +31,21 @@
     </header>
     <main>
       <div class="timer">
-        <h2>25:00</h2>
+        <h2 id="minutesTimer">00</h2>
+        <span>:</span>
+        <h2 id="secondsTimer">00</h2>
       </div>
       <div class="timerInfo">
         <h2>Trabalho</h2>
-        <div class="timerSessions">
-          <div class="session"></div>
-          <div class="session"></div>
-          <div class="session"></div>
-        </div>
+        <ul class="timerSessions">
+          <!-- <li class="session"></li> -->
+          <li class="session"></li>
+          <li class="session"></li>
+        </ul>
 
-        <button><i class="fas fa-play"></i></button>
+        <button onclick="pomodoroStart()"><i class="fas fa-play"></i></button>
       </div>
     </main>
+    <script src="../src/pomodoroTimer.js"></script>
   </body>
 </html>

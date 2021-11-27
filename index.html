@@ -32,9 +32,13 @@
       <div class="inputs">
         <div class="timer">
           <div class="buttons">
-            <button id="upArrow"><i class="fas fa-arrow-up"></i></button>
+            <button onclick="workTimeElement.value++" id="upArrow">
+              <i class="fas fa-arrow-up"></i>
+            </button>
             <br />
-            <button id="downArrow"><i class="fas fa-arrow-down"></i></button>
+            <button onclick="workTimeElement.value--" id="downArrow">
+              <i class="fas fa-arrow-down"></i>
+            </button>
           </div>
           <div class="inputInfo">
             <input
@@ -43,38 +47,64 @@
               maxlength="2"
               size="1"
               id="workTime"
+              oninput="validateTimer()"
             />
             <p>Trabalho</p>
           </div>
         </div>
         <div class="timer">
           <div class="buttons">
-            <button id="upArrow"><i class="fas fa-arrow-up"></i></button>
+            <button onclick="breakTimeElement.value++" id="upArrow">
+              <i class="fas fa-arrow-up"></i>
+            </button>
             <br />
-            <button id="downArrow"><i class="fas fa-arrow-down"></i></button>
+            <button onclick="breakTimeElement.value--" id="downArrow">
+              <i class="fas fa-arrow-down"></i>
+            </button>
           </div>
           <div class="inputInfo">
-            <input type="text" value="5" maxlength="2" size="1" id="workTime" />
+            <input
+              type="text"
+              value="5"
+              maxlength="2"
+              size="1"
+              id="breakTime"
+              oninput="validateBreak()"
+            />
             <p>Pausa</p>
           </div>
         </div>
         <div class="timer">
           <div class="buttons">
-            <button id="upArrow"><i class="fas fa-arrow-up"></i></button>
+            <button onclick="sessionTimeElement.value++" id="upArrow">
+              <i class="fas fa-arrow-up"></i>
+            </button>
             <br />
-            <button id="downArrow"><i class="fas fa-arrow-down"></i></button>
+            <button onclick="sessionTimeElement.value--" id="downArrow">
+              <i class="fas fa-arrow-down"></i>
+            </button>
           </div>
           <div class="inputInfo">
-            <input type="text" value="3" maxlength="2" size="1" id="workTime" />
+            <input
+              type="text"
+              value="3"
+              maxlength="2"
+              size="1"
+              id="sessionTime"
+              oninput="validateSessions()"
+            />
             <p>Sessões</p>
           </div>
         </div>
       </div>
       <div class="nextButton">
-        <a href="pages/pomodoro.html">
-          <button>Continuar</button>
+        <a id="nextPage" href="#">
+          <button onclick="validatePomodoro()" id="nextButton">
+            Continuar
+          </button>
         </a>
       </div>
     </main>
+    <script src="src/validationTimer.js"></script>
   </body>
 </html>
